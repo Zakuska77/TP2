@@ -51,5 +51,7 @@ jobs:
         with:
           app-name: 'e2066675-tp2'
           slot-name: 'Production'
-          package: .
+          app_location: "/"         # Your root folder
+          api_location: ""          # Leave empty if you don't have a backend API folder
+          output_location: "dist"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8AB40BBDD593408193365112B21EBE6B }}
